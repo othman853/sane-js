@@ -1,0 +1,28 @@
+{
+  "name": "sane-js",
+  "version": "1.0.0",
+  "description": "Trying to bring some sense to my Js life",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/othman853/sane-js.git"
+  },
+  "keywords": [
+    "js-from-streets",
+    "gheto-js"
+  ],
+  "author": "@othman853 <anuar.yasser@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/othman853/sane-js/issues"
+  },
+  "homepage": "https://github.com/othman853/sane-js#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "socket.io": "^1.4.6",
+    "socket.io-client": "^1.4.6"
+  }
+}
