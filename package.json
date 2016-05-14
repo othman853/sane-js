@@ -4,6 +4,8 @@
   "description": "Trying to bring some sense to my Js life",
   "main": "server.js",
   "scripts": {
+    "prestart": "npm install && ./node_modules/bower/bin/bower install ",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,9 +23,9 @@
   },
   "homepage": "https://github.com/othman853/sane-js#readme",
   "dependencies": {
+    "bower": "^1.7.9",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
-    "socket.io": "^1.4.6",
-    "socket.io-client": "^1.4.6"
+    "socket.io": "^1.4.6"
   }
 }
