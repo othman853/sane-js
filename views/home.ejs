@@ -7,4 +7,16 @@
     <body>
         <h1>Hello, this is sane js</h1>
     </body>
+
+    <script src="/bower_stuff/socket.io-client/socket.io.js" charset="utf-8"></script>
+    <script type="text/javascript">
+
+        var server = io('http://localhost:3000');
+
+        server.on('connect', function() {
+            console.log('Client connected to the server');
+        });
+
+    </script>
+
 </html>
