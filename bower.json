@@ -1,0 +1,24 @@
+{
+  "name": "sane-js",
+  "description": "Trying to bring some sense to my Js life",
+  "main": "server.js",
+  "authors": [
+    "@othman853 <anuar.yasser@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "js-from-streets",
+    "gheto-js"
+  ],
+  "homepage": "https://github.com/othman853/sane-js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "socket.io-client": "^1.4.6"
+  }
+}
