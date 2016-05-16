@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', (request, response) => response.render('home'));
 
-app.get('/js', browserify(`${__dirname}/public/js/`, {
+app.get('/babelified/js/home.js', browserify(`${__dirname}/public/js/home.js`, {
 
     extensions: ['.js'],
 
