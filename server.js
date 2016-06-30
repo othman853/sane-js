@@ -15,15 +15,20 @@ app.set('view engine', 'ejs');
 
 app.get('/', (request, response) => response.render('home'));
 
-app.get('/babelified/js/home.js', browserify(`${__dirname}/public/js/home.js`, {
+app.get('/babelified/js/:resource', (request, response, next) => {
 
-    extensions: ['.js'],
+    var parser = browserify(`${__dirname}/public/js/${request.params.resource}`, {
 
-    transform: [babelify.configure({
-        presets: ['es2015']
-    })]
+        extensions: ['.js'],
 
-}));
+        transform: [babelify.configure({
+            presets: ['es2015']
+        })]
+    });
+
+    parser(request, response, next);
+
+});
 
 server.listen(3000, () => console.log('Up on 3000'));
 
