@@ -6,7 +6,8 @@
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "cp .githooks/* .git/hooks/"
   },
   "repository": {
     "type": "git",
